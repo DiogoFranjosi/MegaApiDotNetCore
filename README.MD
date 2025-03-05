@@ -46,89 +46,59 @@
   <img src="./_docs/assets/carbon.png" />
 </p>
 
-## API Endpoints
+## Tecnologias Utilizadas
 
-<table align="center">
-  <tr>
-    <th>Method</th>
-    <th>Endpoint</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>GET</td>
-    <td>/api/v1/robots</td>
-    <td>Returns a list of all robots</td>
-  </tr>
-  <tr>
-    <td>GET</td>
-    <td>/api/v1/robots/{id}</td>
-    <td>Returns details of a specific robot by ID</td>
-  </tr>
-  <tr>
-    <td>POST</td>
-    <td>/api/v1/robots</td>
-    <td>Endpoint to create a new robot entry</td>
-  </tr>
-</table>
+- **ASP.NET Core 3.1** - Estrutura principal do backend
+- **Entity Framework Core** - ORM para interação com o banco de dados
+- **Newtonsoft.Json** - Manipulação de JSON
 
-## Techniques Used
 
-<p align="center">
-  - <b>Entity Framework Core:</b> ORM for data management.<br />
-  - <b>RESTful API Design:</b> Ensures clear and effective communication
-  endpoints.<br />
-  - <b>Dependency Injection:</b> Used throughout to promote loose coupling and
-  enhanced testability.<br />
-</p>
+## Dependências Utilizadas
 
-## Dependencies
+A API utiliza as seguintes dependências:
 
-<table align="center">
-  <tr>
-    <th>Package</th>
-    <th>Version</th>
-    <th>Link</th>
-  </tr>
-  <tr>
-    <td>Microsoft.EntityFrameworkCore</td>
-    <td>3.1.8</td>
-    <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.1.8"
-        >NuGet</a
-      >
-    </td>
-  </tr>
-  <tr>
-    <td>Microsoft.EntityFrameworkCore.Design</td>
-    <td>3.1.8</td>
-    <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/3.1.8"
-        >NuGet</a
-      >
-    </td>
-  </tr>
-  <tr>
-    <td>Microsoft.EntityFrameworkCore.SqlServer</td>
-    <td>3.1.8</td>
-    <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/3.1.8"
-        >NuGet</a
-      >
-    </td>
-  </tr>
-  <tr>
-    <td>Newtonsoft.Json</td>
-    <td>12.0.2</td>
-    <td>
-      <a href="https://www.nuget.org/packages/Newtonsoft.Json/12.0.2">NuGet</a>
-    </td>
-  </tr>
-</table>
+| Dependência | Versão | Link |
+|-------------|---------|------|
+| Microsoft.EntityFrameworkCore | 3.1.8 | [NuGet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/) |
+| Microsoft.EntityFrameworkCore.Design | 3.1.8 | [NuGet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/) |
+| Microsoft.EntityFrameworkCore.SqlServer | 3.1.8 | [NuGet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/) |
+| Newtonsoft.Json | 12.0.2 | [NuGet](https://www.nuget.org/packages/Newtonsoft.Json/) |
 
-## :gear: Arch
+## Endpoints da API
+
+| Método | Endpoint | Descrição |
+|--------|---------|------------|
+| **GET** | `/api/v1/robots` | Lista todos os robôs |
+| **GET** | `/api/v1/robots/{id}` | Busca um robô pelo ID |
+| **POST** | `/api/v1/robots` | Cria um novo robô |
+
+## Técnicas Utilizadas
+
+- **Arquitetura em Camadas** - Separação do código em Controllers, Services e Models.
+- **Injeção de Dependência** - Utilização de `IRobotServices` para facilitar testes e modularidade.
+- **RESTful API** - Padrão para comunicação baseada em HTTP.
+- **Tratamento de Erros** - Retorno adequado de códigos HTTP (`200 OK`, `404 Not Found`).
+
+## Configuração e Execução
+
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/seu-usuario/megaman-api.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```sh
+   cd megaman-api
+   ```
+3. Restaure as dependências:
+   ```sh
+   dotnet restore
+   ```
+4. Execute o projeto:
+   ```sh
+   dotnet run
+   ```
+
+## Arquitetura
 
 ```🌐
 src
@@ -144,7 +114,7 @@ src
 │   ├── 📂 Repositories     [Repository pattern]
 ```
 
-## License This software is licensed under the terms of the [MIT]
+## Autor
 
-⌨️ FelipeAguiar -
-[Github](https://github.com/felipeAguiarCode)
+ Desenvolvido por Diogo Franjosi - [Github](https://github.com/DiogoFranjosi)
+
