@@ -13,14 +13,14 @@
   >
   <br />
   <a
-    href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml"
+    href="https://github.com/DiogoFranjosi/MegaApiDotnetCore/actions/workflows/build.yml"
   >
     <img
-      src="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
+      src="https://github.com/DiogoFranjosi/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
       alt=""
     />
   </a>
-  <a href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/releases/latest">
+  <a href="https://github.com/DiogoFranjosi/MegaApiDotnetCore/releases/latest">
     <img
       src="https://img.shields.io/github/v/release/felipeAguiarCode/MegaApiDotnetCore"
       alt="Latest Release"
