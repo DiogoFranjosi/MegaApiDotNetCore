@@ -22,7 +22,7 @@
   </a>
   <a href="https://github.com/DiogoFranjosi/MegaApiDotnetCore/releases/latest">
     <img
-      src="https://img.shields.io/github/v/release/felipeAguiarCode/MegaApiDotnetCore"
+      src="https://img.shields.io/github/v/release/DiogoFranjosi/MegaApiDotnetCore"
       alt="Latest Release"
     />
   </a>
